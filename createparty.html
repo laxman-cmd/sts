@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <a href="party.html">Party</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="createparty.html">Create Party</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="modifyparty.html">Modify Party</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="resetpassword.html">Reset Password</a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <br>
+    <br>
+
+
+    <div>
+        party type:
+
+        <label for="party individual">individual</label>
+        <input type="radio" name="party-choice" value="choice-1">
+
+        <label for="party partygroup">partygroup</label>
+        <input type="radio" name="party-choice" value="choice-2">
+
+    </div>
+
+<!-- PARTY INFORMATION-->
+    <div>
+        <h2>&nbsp;&nbsp;Party Information :</h2>
+    </div>
+    <br>
+    <table>
+        <tbody>
+            <tr>
+                <td class="label">Party Type</td>
+                <td>
+                    <select id="partytype" name="partytype" size="1">
+                            <option value="CUSTOMER">Customer</option>
+                            <option value="EMPLOYEE">Employee</option>
+                            <option value="PROSPECT">Prospect</option>
+                    </select>
+                </td>
+                <td class="label">Personal Title</td>
+                <td>
+                    <select id="title" name="title" size="1">
+                            <option value="MR">Mr</option>
+                            <option value="MRS">Mrs</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">First Name</td>
+                <td>
+                <input type="text" id="firstName" name="firstName" value="">
+                </td>
+                
+                <td class="label">Middle Name</td>
+                <td>
+                    <input type="text" id="middleName" name="middleName" value="">
+                </td>
+                
+                <td class="label">Last Name</td>
+                <td>
+                    <input type="text" id="lastName" name="lastName" value="">
+                </td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+        </tbody>
+    </table>	
+    
+    <br>
+    </div>
+
+<!--Customer Contact Details -->
+    <div>
+        <div>
+            <h2>&nbsp;&nbsp;Customer Contact Details :</h2>
+        </div>
+        
+        <br>
+            <table>
+                <tbody>
+                <tr>
+                    <td class="label">Contact Type</td>
+                        <td>
+                        <select id="contacttype" name="contacttype" size="1">
+                                <option value="EMAIL ADDRESS">Email Address</option>
+                                <option value="TELECOM NUMBER">Telecom Number</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr><td>&nbsp;</td></tr> 
+            
+                <tr>
+                    <td class="label">Type</td>
+                    <td>
+                        <select>
+                                <option value="PRIMARY PHONE">Primary</option>
+                                <option value="PHONE WORK">Work</option>
+                                <option value="PHONE MOBILE">Mobile</option>
+                                <option value="PHONE BILLING">Payment</option>
+                        </select>
+                    </td>
+                    
+                    <td class="label-custom">Email Id <sup>*</sup></td>
+                    <td nowrap="nowrap">
+                        <input type="text" id="pEmailId" name="pEmailId" value="" class="isEmail">
+                    </td>
+
+                   
+                
+                </tr> 
+                
+                </tbody></table>	
+                <table id="buttonAdd">
+                    <tbody><tr>
+                    
+                        <td width="100%" align="center">
+                             <input type="button" value="Add">
+                        </td>
+                    </tr>
+                    <tr><td>&nbsp;</td></tr> 
+                </tbody></table>
+        
+
+                <div align="center">
+       
+                    <table  cellspacing="50">
+                        <thead>
+                            <tr>
+                                <th style="text-align:center;"> Contact Type </th>
+                                <th style="text-align:center;">Email Id</th>
+                                <th style="text-align:center;"> Country Code</th>
+                                <th style="text-align:center;"> Area Code</th>
+                                <th style="text-align:center;">Phone Number</th>
+                                <th style="text-align:center;"> Purpose</th>
+                                <th style="text-align:center;"> Contact Person </th>
+                                <th style="text-align:center;"> Id </th>
+                                <th style="text-align:center;"> Action </th>
+                            </tr>
+                            </tr>
+                        </thead>
+                        <tbody>
+                
+                        </tbody>
+                        <tfoot>
+                
+                        </tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                
+            
+    </div>
+
+    <div>
+                    <div>
+                        <h2>&nbsp;&nbsp;Customer Payment Terms :</h2>
+                    </div>
+                    <br>
+                        <table cellspacing="0">
+                            <tbody><tr>
+                                <td class="label">Credit Limit (Rs.) <sup>*</sup></td>
+                                <td>
+                                <input type="text" id="creditlimits" name="creditlimits" value="">
+                                </td>
+                                
+                                <td class="label">Payment Reminder (Days)</td>
+                                <td>
+                                    <input type="text" id="paymentreminder" name="paymentreminder" value="">
+                                </td>
+                            </tr>
+                        </tbody></table>	
+                    <br>
+                
+     </div>
+
+     <!--Customer Address-->>
+     <div>
+        <div>
+            <h2>&nbsp;&nbsp;Customer Address :</h2>
+        </div>	
+        <br>
+            <table cellspacing="0">
+                <tbody>
+                <tr>
+                    <td class="label">Address Type</td>
+                    <td>
+                        <select id="addresstype" name="addresstype" size="1">
+                                <option value="BILLING LOCATION">Billing Location</option>
+                                <option value="SHIPPING LOCATION">Shipping Location</option>
+                        </select>
+                    </td>
+                    
+                    <td>
+                         <input id="sameforboth" type="checkbox" name="sameforboth" value="Y">
+                    </td>
+                    <td class=""><b>Same Address for both</b></td>
+                </tr>
+                <tr>	
+                    <td class="label">To Name <sup>*</sup></td>
+                    <td>
+                        <input type="text" name="toname" id="toname" value="">
+                    </td>
+        
+                    <td class="label">GSTIN Number</td>
+                    <td>
+                        <input type="text" name="gstinmumber" id="gstinnumber">
+                    </td>
+                    
+                    <td class="label">Contact Person</td>
+                    <td>
+                        <input type="text" name="shippingattnname" id="shippingattnname" >
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td class="label">Address1 <sup>*</sup></td>
+                    <td>
+                        <input type="text" name="customeraddress1" id="customeraddress1">
+                    </td>
+                    
+                    <td class="label">Address2</td>
+                    <td>
+                        <input type="text" name="customeraddress2" id="customeraddress2">
+                    </td>
+                    <td class="label">City <sup>*</sup></td>
+                    <td >
+                        <input type="text" name="customercity" id="customercity">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="label">Postal Code <sup>*</sup></td>
+                    <td>
+                        <input type="text" name="customerpostalcode" id="customerpostalcode">
+                    </td>
+        
+                    <td class="label">State</td>
+                    <td>
+                        <select id="state" name="state" size="1">
+                               
+                                <option value="IN-DL">Delhi</option>
+                                <option value="IN-GA">Goa</option>
+                                <option value="IN-GJ">Gujarat</option>
+                                <option value="IN-JK">Jammu and Kashmir</option>
+                                <option value="IN-MP">Madhya Pradesh</option>
+                                <option value="IN-MH">Maharashtra</option>
+                                <option value="IN-PB">Punjab</option>
+                                <option value="IN-RJ">Rajasthan</option>
+                                <option value="IN-SK">Sikkim</option>
+                                <option value="IN-TN">Tamil Nadu</option>
+                                <option value="IN-UP">Uttar Pradesh</option>
+                                <option value="IN-UK">Uttarakhand</option>
+                                <option value="IN-WB">West Bengal</option>
+                        </select>
+                    </td>
+        
+                    <td class="label">Country</td>
+                    <td>
+                        <select id="country" name="country" size="1">
+                            <option value="IND">India</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr><td>&nbsp;</td></tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input type="button" value="Add" >
+                    </td>
+                </tr>
+                <tr><td>&nbsp;</td></tr> 
+            </tbody></table>
+            
+            
+        <br>			
+    </div>
+
+    <div align="center">
+       
+        <table  cellspacing="50">
+            <thead>
+                <tr>
+                    <th style="text-align:center;"> To Name </th>
+                    <th style="text-align:center;">Address Type</th>
+                    <th style="text-align:center;"> GSTIN Number</th>
+                    <th style="text-align:center;">Address1</th>
+                    <th style="text-align:center;">Address2</th>
+                    <th style="text-align:center;"> City</th>
+                    <th style="text-align:center;"> Postal Code </th>
+                    <th style="text-align:center;"> State </th>
+                    <th style="text-align:center;"> Country </th>
+                    <td style="text-align:center;">Action</td>
+
+                </tr>
+                </tr>
+            </thead>
+            <tbody>
+    
+            </tbody>
+            <tfoot>
+    
+            </tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    
+
+    </div>
+    
+<table align="center" cellspacing="0">
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>
+            <input type="button" value="Save" >
+        </td>
+    </tr>
+</table>
+
+
+
+
+
+    
+</body>
+</html>
